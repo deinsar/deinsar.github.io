@@ -1,0 +1,14 @@
+.wrapper{
+  positoin: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ }
+ .img-area{
+    box-shadow: 4px 4px 4px #262626;
+    border: 10px solid #eee;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+ }
+ 
