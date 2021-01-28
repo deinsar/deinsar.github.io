@@ -1,28 +1,31 @@
-.wrapper{
-  positoin: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
- }
- .img-area{
-    box-shadow: 4px 4px 4px #262626;
-    border: 10px solid #eee;
-    height: 400px;
-    width: 400px;
-    overflow: hidden;
- }
-.box{
-  background: url(https://upload.wikimedia.org/wikipedia/commons/1/16/HDRI_Sample_Scene_Balls_%28JPEG-HDR%29.jpg);
-  -webkit-background-size: 400px 400px;
-  background-size: 400px 400px;
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
 }
-.box img{
-  width: 400px;
-  heidth: 400px;
-  margin-left: 0;
-  transition: 2s;
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
 }
-.box img:hoover{
-  margin-left: -400px;
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
 }
-  
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
