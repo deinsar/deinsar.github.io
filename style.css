@@ -11,4 +11,18 @@
     width: 400px;
     overflow: hidden;
  }
- 
+.box{
+  background: url(https://upload.wikimedia.org/wikipedia/commons/1/16/HDRI_Sample_Scene_Balls_%28JPEG-HDR%29.jpg);
+  -webkit-background-size: 400px 400px;
+  background-size: 400px 400px;
+}
+.box img{
+  width: 400px;
+  heidth: 400px;
+  margin-left: 0;
+  transition: 2s;
+}
+.box img:hoover{
+  margin-left: -400px;
+}
+  
