@@ -10,7 +10,7 @@ var googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
 
 	});
 
-var lyr = L.tileLayer('./{z}/{x}/{y}.png', {
+var lyr = L.tileLayer('./Berlin_map_1772/{z}/{x}/{y}.png', {
 	tms: true,transparent: true, opacity: 1, 
 	attribution: '', 
 	minZoom: 1, maxZoom: 16
